@@ -8,14 +8,20 @@ License: What license is it under?
 Imports: 
     attempt,
     config (>= 0.3.1),
+    consultations (>= 0.0.0.9000),
+    dplyr,
     DT,
+    ggplot2,
     glue,
     golem (>= 0.3.1),
     htmltools,
     magrittr,
-    shiny (>= 1.7.1)
+    shiny (>= 1.7.1),
+    shinydashboard
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.2
 Depends: 
     R (>= 2.10)
+Remotes: 
+    DataS-DHSC/consultations
