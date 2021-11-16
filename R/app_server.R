@@ -47,4 +47,5 @@ app_server <- function( input, output, session ) {
   
   mod_graphs_server("graphs_ui_1", lda_model = lda_model)
   
+  mod_text_server("text_ui_1", lda_model = lda_model)
 }

@@ -11,13 +11,13 @@ mod_graphs_ui <- function(id){
   ns <- NS(id)
   tagList(
     
-    "Double hello",
-    
-    plotOutput(ns("tf_idf_plot"))
- 
+    fluidRow(
+      
+      plotOutput(ns("tf_idf_plot"))
+    )
   )
 }
-    
+
 #' graphs Server Functions
 #'
 #' @noRd 
@@ -37,11 +37,11 @@ mod_graphs_server <- function(id, lda_model){
         ggplot2::facet_wrap(~ topic, scales = "free_y") +
         ggplot2::coord_flip() +
         ggplot2::labs(x = NULL, y = expression(beta),
-             title = "Highest word probabilities for each topic",
-             subtitle = "Different words are associated with different topics")
+                      title = "Highest word probabilities for each topic",
+                      subtitle = "Different words are associated with different topics")
       
     })
- 
+    
   })
 }
-    
+
