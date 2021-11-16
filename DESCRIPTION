@@ -6,9 +6,16 @@ Description: Interactively explore the number of topics in an LDA and show
   word frequencies and typical comments
 License: What license is it under?
 Imports: 
+    attempt,
     config (>= 0.3.1),
+    DT,
+    glue,
     golem (>= 0.3.1),
+    htmltools,
+    magrittr,
     shiny (>= 1.7.1)
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.1.1
+RoxygenNote: 7.1.2
+Depends: 
+    R (>= 2.10)

@@ -52,7 +52,7 @@ golem::use_recommended_deps()
 
 ## Favicon ----
 # If you want to change the favicon (default is golem's one)
-golem::use_favicon() # path = "path/to/ico". Can be an online file. 
+golem::use_favicon("https://github.com/CDU-data-science-team/assets/blob/main/logo/nottshc-cdu-data-science-logo-crop.png") # path = "path/to/ico". Can be an online file. 
 golem::remove_favicon()
 
 ## Add helper functions ----

@@ -13,9 +13,15 @@
 
 # Engineering
 
+stop() # because I'm an idiot and sometimes run this whole file
+
 ## Dependencies ----
 ## Add one line by package you want to add as dependency
 usethis::use_package( "thinkr" )
+
+# use pipe
+
+usethis::use_pipe()
 
 ## Add modules ----
 ## Create a module infrastructure in R/
@@ -35,7 +41,7 @@ golem::add_css_file( "custom" )
 
 ## Add internal datasets ----
 ## If you have data in your package
-usethis::use_data_raw( name = "my_dataset", open = FALSE ) 
+usethis::use_data_raw( name = "nov_21", open = FALSE ) 
 
 ## Tests ----
 ## Add one line by test you want to create
