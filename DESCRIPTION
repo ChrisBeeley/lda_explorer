@@ -16,6 +16,7 @@ Imports:
     golem (>= 0.3.1),
     htmltools,
     magrittr,
+    purrr,
     shiny (>= 1.7.1),
     shinydashboard
 Encoding: UTF-8

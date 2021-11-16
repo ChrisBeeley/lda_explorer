@@ -25,6 +25,7 @@ app_ui <- function(request) {
           tabItems(
             # First tab content
             tabItem(tabName = "plots",
+                    "Hello",
                     mod_graphs_ui("graphs_ui_1")
             ),
             
