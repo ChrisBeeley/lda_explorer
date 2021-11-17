@@ -16,7 +16,7 @@ app_ui <- function(request) {
         sidebarMenu(
           menuItem("Plots", tabName = "plots", icon = icon("chart-bar")),
           menuItem("Text", tabName = "text", icon = icon("book")),
-          numericInput("no_topics", "Number of topics", 4, 
+          numericInput("no_topics", "Number of topics", 6, 
                        min = 2, max = 20)
         )
       ),
