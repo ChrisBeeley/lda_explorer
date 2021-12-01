@@ -11,10 +11,14 @@ app_server <- function( input, output, session ) {
   
   lda_model <- reactive({
     
+    remove_words <- stringr::str_split(input$remove_text, ",") %>% 
+      unlist() %>% 
+      stringr::str_trim(side = "both")
+    
     unnest_data <- nov_data %>%
       dplyr::filter(!is.na(Detail)) %>%
       tidytext::unnest_tokens('word', "Detail") %>%
-      consultations::text_remove_words()
+      consultations::text_remove_words(custom_words = remove_words)
     
     grouping_var <- "response_id"
     word_col <- "word"

@@ -23,6 +23,7 @@ usethis::use_dev_package( "consultations", remote = "DataS-DHSC/consultations" )
 usethis::use_package( "tidyr" )
 usethis::use_package( "shinydashboard" )
 usethis::use_package( "purrr" )
+usethis::use_package( "stringr" )
 
 # use pipe
 

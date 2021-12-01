@@ -17,7 +17,8 @@ app_ui <- function(request) {
           menuItem("Plots", tabName = "plots", icon = icon("chart-bar")),
           menuItem("Text", tabName = "text", icon = icon("book")),
           numericInput("no_topics", "Number of topics", 6, 
-                       min = 2, max = 20)
+                       min = 2, max = 20),
+          textInput("remove_text", "Words to remove (separate with commas")
         )
       ),
       dashboardBody(
